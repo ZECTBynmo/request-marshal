@@ -1,0 +1,26 @@
+{
+  "name": "request-marshal",
+  "version": "0.0.1",
+  "description": "Request rate and concurrency limiter",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node test/main.js",
+    "start": "node src/index.js"
+  },
+  "bin": {
+    "marshal": "./bin/main.js"
+  },
+  "author": "ZECTBynmo (michael.vegeto@gmail.com)",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^3.1.0",
+    "express": "^4.16.2",
+    "level": "^2.0.0",
+    "tokenthrottle-level": "^1.0.1",
+    "yargs": "^10.0.3"
+  },
+  "devDependencies": {
+    "supertest": "^3.0.0",
+    "tape": "^4.8.0"
+  }
+}
