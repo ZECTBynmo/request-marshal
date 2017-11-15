@@ -4,6 +4,7 @@ if (process.argv[2] === '--debug' || process.argv[2] === 'debug') {
 }
 
 require('./server')
+require('./limiter')
 
 process.on('unhandledRejection', (err) => {
   console.log("unhandledRejection", err)
